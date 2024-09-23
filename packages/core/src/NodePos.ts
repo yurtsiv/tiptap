@@ -149,7 +149,7 @@ export class NodePos {
         childNodePos.actualDepth = this.depth + 1
       }
 
-      children.push(new NodePos($pos, this.editor, isBlock, isBlock ? node : null))
+      children.push(childNodePos)
     })
 
     return children
